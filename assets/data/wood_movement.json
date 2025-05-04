@@ -1,0 +1,23 @@
+[
+    {"species":"White Oak","density":47,"radial":4.0,"tangential":7.2},
+    {"species":"Red Oak","density":44,"radial":4.0,"tangential":6.6},
+    {"species":"Hard Maple","density":44,"radial":4.8,"tangential":9.9},
+    {"species":"Soft Maple","density":38,"radial":4.6,"tangential":9.9},
+    {"species":"Cherry","density":36,"radial":3.1,"tangential":6.7},
+    {"species":"Black Walnut","density":38,"radial":5.5,"tangential":7.8},
+    {"species":"Birch","density":43,"radial":4.9,"tangential":7.3},
+    {"species":"Hickory","density":51,"radial":4.9,"tangential":10.2},
+    {"species":"Douglas‑Fir","density":33,"radial":4.8,"tangential":7.6},
+    {"species":"Western Red Cedar","density":23,"radial":2.8,"tangential":5.0},
+    {"species":"Spruce","density":28,"radial":4.2,"tangential":7.2},
+    {"species":"Pine (Southern Yellow)","density":36,"radial":4.8,"tangential":7.4},
+    {"species":"Pine (White)","density":25,"radial":3.4,"tangential":6.2},
+    {"species":"Poplar","density":26,"radial":2.1,"tangential":5.7},
+    {"species":"Teak","density":41,"radial":2.6,"tangential":5.3},
+    {"species":"Iroko","density":40,"radial":2.2,"tangential":4.4},
+    {"species":"Mahogany (Honduras)","density":34,"radial":2.6,"tangential":4.1},
+    {"species":"Sapele","density":42,"radial":4.6,"tangential":7.3},
+    {"species":"Ash (White)","density":42,"radial":4.9,"tangential":7.8},
+    {"species":"Beech","density":45,"radial":5.5,"tangential":11.9}
+  ]
+  

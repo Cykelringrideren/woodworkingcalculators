@@ -1,0 +1,339 @@
+:root {
+    --wwt-base-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --wwt-border: #d0d7de;
+    --wwt-border-dark: #b2b9c0;
+    --wwt-bg-light: #fafafa;
+    --wwt-bg-card: #fffefc;
+    --wwt-accent: #1a6ece;
+    --wwt-accent-dark: #1354a7;
+    --wwt-danger: #bf1e2d;
+    --wwt-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+    --wwt-radius: 4px;
+}
+
+.wwt-board-foot,
+.wwt-movement,
+.wwt-sheet-yield,
+.wwt-weight,
+.wwt-sheet-wrap {
+    font-family: var(--wwt-base-font);
+    background: var(--wwt-bg-card);
+    border: 1px solid var(--wwt-border);
+    border-radius: var(--wwt-radius);
+    padding: 1rem;
+    box-shadow: var(--wwt-shadow);
+}
+
+.wwt-btn {
+    display: inline-block;
+    cursor: pointer;
+    background: var(--wwt-accent);
+    color: #fff;
+    border: 1px solid var(--wwt-accent-dark);
+    border-radius: var(--wwt-radius);
+    padding: .45rem .9rem;
+    font-size: .95rem;
+    line-height: 1.2;
+    transition: background .15s;
+}
+
+.wwt-btn:hover,
+.wwt-btn:focus {
+    background: var(--wwt-accent-dark);
+}
+
+.wwt-remove {
+    background: none;
+    border: none;
+    color: var(--wwt-danger);
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.wwt-remove:hover {
+    color: #e03a46;
+}
+
+.wwt-board-foot table,
+.wwt-sheet-yield table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+
+.wwt-board-foot th,
+.wwt-board-foot td,
+.wwt-sheet-yield th,
+.wwt-sheet-yield td {
+    border: 1px solid var(--wwt-border);
+    padding: .4rem .5rem;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 80px;
+}
+
+.wwt-board-foot tbody tr:nth-child(odd),
+.wwt-sheet-yield tbody tr:nth-child(odd) {
+    background: var(--wwt-bg-light);
+}
+
+.wwt-sheet-yield td:last-child {
+    width: 32px;
+}
+
+@media (max-width:640px) {
+
+    .wwt-board-foot table,
+    .wwt-sheet-yield table {
+        overflow-x: auto;
+    }
+}
+
+.wwt-total,
+.wwt-total-cost {
+    font-weight: 600;
+    margin: .35rem 0;
+}
+
+.wwt-sheet-wrap {
+    margin: 1.25rem 0;
+}
+
+.wwt-sheet-svg {
+    max-width: 420px;
+    height: auto;
+    border: 1px solid var(--wwt-border-dark);
+}
+
+.wwt-sheet-svg rect {
+    shape-rendering: crispEdges;
+}
+
+.wwt-sheet-svg text {
+    font-family: var(--wwt-base-font);
+    pointer-events: none;
+}
+
+.wwt-legend {
+    margin: .75rem 0;
+}
+
+.wwt-legend ul {
+    margin: 0;
+    padding-left: 1.1em;
+}
+
+.wwt-legend li {
+    font-size: .9rem;
+    line-height: 1.3;
+}
+
+.wwt-summary {
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.wwt-custom-sheet { display: none; font-size: .9rem; }
+.wwt-custom-sheet input { margin: 0 .25rem; padding: .25rem; }
+
+.wwt-movement {
+    max-width: 560px;
+    line-height: 1.4;
+}
+
+.wwt-movement label,
+.wwt-movement fieldset {
+    display: block;
+    margin: .55rem 0;
+}
+
+.wwt-movement select,
+.wwt-movement input[type="number"],
+.wwt-movement input[type="text"] {
+    width: 100%;
+    padding: .4rem .55rem;
+    font-size: 1rem;
+    border: 1px solid var(--wwt-border-dark);
+    border-radius: var(--wwt-radius);
+    box-sizing: border-box;
+}
+
+.wwt-movement fieldset {
+    border: 0;
+    padding: 0;
+}
+
+.wwt-movement fieldset label {
+    display: inline-block;
+    margin-right: 1.25rem;
+}
+
+.wwt-width-row {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.wwt-width-row input[type="number"] {
+    flex: 1 1 auto;
+}
+
+.wwt-width-row select[data-unit] {
+    flex: 0 0 5rem;
+}
+
+.wwt-unit-label {
+    flex: 0 0 6rem;
+}
+
+.wwt-mc-row {
+    display: flex;
+    gap: .75rem;
+}
+
+.wwt-mc-row label {
+    flex: 1;
+}
+
+.wwt-action-row {
+    display: flex;
+    gap: .6rem;
+    margin: .6rem 0;
+}
+
+.wwt-result {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1rem 0 .6rem;
+}
+
+.wwt-chart-label {
+    margin: .5rem 0 .25rem;
+    font-weight: 600;
+}
+
+.wwt-movement canvas {
+    max-width: 100%;
+    height: 140px;
+    display: block;
+    margin: 0 auto .3rem;
+}
+
+.wwt-movement .chartjs-legend {
+    margin-bottom: .25rem;
+}
+
+details.wwt-mc-thumb {
+    margin: .8rem 0;
+    border: 1px solid var(--wwt-border);
+    border-radius: var(--wwt-radius);
+    padding: .55rem .8rem;
+    background: var(--wwt-bg-light);
+}
+
+details.wwt-mc-thumb summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+details.wwt-mc-thumb ul {
+    margin: .45rem 0 0;
+    padding-left: 1.2em;
+    font-size: .9rem;
+    line-height: 1.35;
+}
+
+@media (prefers-color-scheme: dark) {
+    details.wwt-mc-thumb {
+        background: #262626;
+        border-color: #3f3f3f;
+    }
+
+    .wwt-chart-label {
+        color: #e5e5e5;
+    }
+}
+
+.wwt-movement canvas {
+    cursor: pointer;
+}
+
+.wwt-units-toggle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .wwt-units-toggle legend {
+    font-weight: bold;
+  }
+  .wwt-units-toggle label {
+    cursor: pointer;
+  }
+  
+  .wwt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.75rem;
+  }
+  .wwt-table th,
+  .wwt-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .wwt-table input {
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    box-sizing: border-box;
+  }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --wwt-bg-card: #1e1e1e;
+        --wwt-bg-light: #262626;
+        --wwt-border: #3f3f3f;
+        --wwt-border-dark: #555;
+        --wwt-accent: #4090ff;
+        --wwt-accent-dark: #2c6dd1;
+    }
+
+    .wwt-board-foot,
+    .wwt-sheet-yield,
+    .wwt-movement,
+    .wwt-weight {
+        color: #e5e5e5;
+    }
+
+    .wwt-sheet-svg {
+        border-color: #555;
+    }
+}
+
+details.wwt-mc-thumb {
+    margin: .75rem 0;
+    border: 1px solid var(--wwt-border);
+    border-radius: var(--wwt-radius);
+    padding: .5rem .75rem;
+    background: var(--wwt-bg-light);
+}
+
+details.wwt-mc-thumb summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+details.wwt-mc-thumb ul {
+    margin: .5rem 0 0;
+    padding-left: 1.2em;
+    font-size: .9rem;
+    line-height: 1.3;
+}
+
+.wwt-chart-label {
+    margin: .5rem 0 .25rem;
+    font-weight: 600;
+}
